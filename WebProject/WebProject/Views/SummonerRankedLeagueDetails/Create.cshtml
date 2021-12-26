@@ -1,0 +1,87 @@
+﻿@model WebProject.Models.SummonerRankedLeagueDetail
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>SummonerRankedLeagueDetail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LeagueId" class="control-label"></label>
+                <input asp-for="LeagueId" class="form-control" />
+                <span asp-validation-for="LeagueId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QueueType" class="control-label"></label>
+                <input asp-for="QueueType" class="form-control" />
+                <span asp-validation-for="QueueType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tier" class="control-label"></label>
+                <input asp-for="Tier" class="form-control" />
+                <span asp-validation-for="Tier" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rank" class="control-label"></label>
+                <input asp-for="Rank" class="form-control" />
+                <span asp-validation-for="Rank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SummonerId" class="control-label"></label>
+                <select asp-for="SummonerId" class ="form-control" asp-items="ViewBag.SummonerId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaguePoint" class="control-label"></label>
+                <input asp-for="LeaguePoint" class="form-control" />
+                <span asp-validation-for="LeaguePoint" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Win" class="control-label"></label>
+                <input asp-for="Win" class="form-control" />
+                <span asp-validation-for="Win" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Losses" class="control-label"></label>
+                <input asp-for="Losses" class="form-control" />
+                <span asp-validation-for="Losses" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Veteran" /> @Html.DisplayNameFor(model => model.Veteran)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Inactive" /> @Html.DisplayNameFor(model => model.Inactive)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="FreshBlood" /> @Html.DisplayNameFor(model => model.FreshBlood)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="HotStreak" /> @Html.DisplayNameFor(model => model.HotStreak)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

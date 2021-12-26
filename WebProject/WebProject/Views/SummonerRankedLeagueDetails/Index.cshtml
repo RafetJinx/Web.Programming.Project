@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WebProject.Models.SummonerRankedLeagueDetail>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.QueueType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tier)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Summoner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeaguePoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Win)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Losses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Veteran)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inactive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FreshBlood)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HotStreak)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QueueType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Summoner.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeaguePoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Win)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Losses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Veteran)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inactive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FreshBlood)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HotStreak)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.LeagueId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.LeagueId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.LeagueId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

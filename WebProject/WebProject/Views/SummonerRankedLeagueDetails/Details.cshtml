@@ -1,0 +1,84 @@
+﻿@model WebProject.Models.SummonerRankedLeagueDetail
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>SummonerRankedLeagueDetail</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QueueType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QueueType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tier)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tier)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rank)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rank)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Summoner)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Summoner.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LeaguePoint)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LeaguePoint)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Win)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Win)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Losses)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Losses)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Veteran)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Veteran)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Inactive)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Inactive)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FreshBlood)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FreshBlood)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HotStreak)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HotStreak)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LeagueId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
