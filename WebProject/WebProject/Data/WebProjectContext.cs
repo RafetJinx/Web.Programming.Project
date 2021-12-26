@@ -19,5 +19,7 @@ namespace WebProject.Data
         public DbSet<WebProject.Models.SummonerRankedLeagueDetail> SummonerRankedLeagueDetail { get; set; }
 
         public DbSet<WebProject.Models.Champion> Champion { get; set; }
+
+        public DbSet<WebProject.Models.ChampionRotation> ChampionRotation { get; set; }
     }
 }
