@@ -161,3 +161,8 @@ C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProj
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\ref\WebProject.dll
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\WebProject.pdb
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\WebProject.genruntimeconfig.cache
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Summoners\Create.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Summoners\Delete.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Summoners\Details.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Summoners\Edit.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Summoners\Index.cshtml.g.cs
