@@ -171,3 +171,8 @@ C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProj
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerRankedLeagueDetails\Details.cshtml.g.cs
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerRankedLeagueDetails\Edit.cshtml.g.cs
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerRankedLeagueDetails\Index.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Champions\Create.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Champions\Delete.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Champions\Details.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Champions\Edit.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\Champions\Index.cshtml.g.cs
