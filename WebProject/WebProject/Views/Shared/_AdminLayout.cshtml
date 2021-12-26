@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @using Microsoft.AspNetCore.Identity
+    @inject SignInManager<IdentityUser> SignInManager
+    @inject UserManager<IdentityUser> UserManager
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="~/css/AdminPanel.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <asp:ContentPlaceHolder id="head" runat="server" />
+</head>
+<body>
+        <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a asp-controller="Home" asp-action="Index" class="w3-bar-item w3-button">Home</a>
+        <a asp-controller="Summoners" asp-action="Index" class="w3-bar-item w3-button">Summoners</a>
+        <a asp-controller="SummonerRankedLeagueDetails" asp-action="Index" class="w3-bar-item w3-button">Ranked Details</a>
+        <a asp-controller="SummonerChampionMasteries" asp-action="Index" class="w3-bar-item w3-button">Champion Masteries</a>
+        @if (SignInManager.IsSignedIn(User))
+        {<a asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">Logout</a>}
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:25%">
+
+            <div class="w3-container w3-teal">
+                <h1>Admin Panel</h1>
+            </div>
+
+
+            <div class="w3-container">
+                @if (SignInManager.IsSignedIn(User)) {<h2>Hello @User.Identity.Name!</h2> }
+                <p>DATA</p>
+                <p></p>
+            </div>
+
+        </div>
+</body>
+@RenderBody()
+</html>

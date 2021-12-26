@@ -1,0 +1,20 @@
+﻿body {
+    color: darkcyan;
+    background-color:darkslategrey;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 5px;
+}
+
+.RotationsL-R{
+    border: 1px solid red;
+}
+.RotationsL-R:hover{
+    border: 1px solid red;
+}

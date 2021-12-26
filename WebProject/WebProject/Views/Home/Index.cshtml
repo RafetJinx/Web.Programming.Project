@@ -1,8 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+    <link rel="stylesheet" href="~/css/home.css" />
+</head>
+<body>
+    <img class="justify-content-md-center"  src="https://m.boxerdergisi.com.tr/Content/Images/PhotoGallery/Size1/dunyada-en-cok-oynanan-12-bilgisayar-oyunu-98161-28112018150330.jpg" alt="Image Not Found"/>
+    <h3 class="text-center">RITO WEB PROJECT</h3>
+    <div class="text-center">
+        <!--Action düzenlenecek veritabanına göre.-->
+        <form class="searchButton" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search Summoner..." />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div>
+        <!--Veri tabanına göre düzenlenecek.-->
+        <a asp-controller="Champions" asp-action="Index" class="RotationsL-R left btn-dark " style="float: left; ">Champion List</a>
+        <a asp-controller="ChampionRotations" asp-action="Index" class="RotationsL-R right btn-dark" style="float: right;">Free Champion Rotation</a>
+        <!-- Ortadan ayırma bozulursa diye önlem olarak duruyor.<br style="clear:both;" />-->
+    </div>
+</body>
