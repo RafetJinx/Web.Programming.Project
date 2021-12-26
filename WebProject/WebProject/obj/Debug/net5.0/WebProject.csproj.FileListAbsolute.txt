@@ -181,3 +181,8 @@ C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProj
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\ChampionRotations\Details.cshtml.g.cs
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\ChampionRotations\Edit.cshtml.g.cs
 C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\ChampionRotations\Index.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerChampionMasteries\Create.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerChampionMasteries\Delete.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerChampionMasteries\Details.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerChampionMasteries\Edit.cshtml.g.cs
+C:\Users\rafet\OneDrive\noname\Masaüstü\Riot\WebProject-Son\WebProject\WebProject\obj\Debug\net5.0\Razor\Views\SummonerChampionMasteries\Index.cshtml.g.cs
