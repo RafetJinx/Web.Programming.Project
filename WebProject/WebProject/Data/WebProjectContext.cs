@@ -17,5 +17,7 @@ namespace WebProject.Data
         public DbSet<WebProject.Models.Summoner> Summoner { get; set; }
 
         public DbSet<WebProject.Models.SummonerRankedLeagueDetail> SummonerRankedLeagueDetail { get; set; }
+
+        public DbSet<WebProject.Models.Champion> Champion { get; set; }
     }
 }
