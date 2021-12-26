@@ -1,0 +1,61 @@
+﻿@model WebProject.Models.SummonerChampionMastery
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>SummonerChampionMastery</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ChampionId" class="control-label"></label>
+                <select asp-for="ChampionId" class ="form-control" asp-items="ViewBag.ChampionId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChampionLevel" class="control-label"></label>
+                <input asp-for="ChampionLevel" class="form-control" />
+                <span asp-validation-for="ChampionLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChampionPoint" class="control-label"></label>
+                <input asp-for="ChampionPoint" class="form-control" />
+                <span asp-validation-for="ChampionPoint" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastPlayTime" class="control-label"></label>
+                <input asp-for="LastPlayTime" class="form-control" />
+                <span asp-validation-for="LastPlayTime" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ChestGranted" /> @Html.DisplayNameFor(model => model.ChestGranted)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="TokensEarned" class="control-label"></label>
+                <input asp-for="TokensEarned" class="form-control" />
+                <span asp-validation-for="TokensEarned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SummonerId" class="control-label"></label>
+                <select asp-for="SummonerId" class ="form-control" asp-items="ViewBag.SummonerId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
